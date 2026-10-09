@@ -46,24 +46,6 @@
     });
   }
 
-  /* ---------- Animación al hacer scroll ---------- */
-  function initReveal() {
-    var items = document.querySelectorAll(".reveal");
-    if (!("IntersectionObserver" in window)) {
-      items.forEach(function (el) { el.classList.add("visible"); });
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
-    items.forEach(function (el) { io.observe(el); });
-  }
-
   /* ---------- Datos de contacto ---------- */
   function serviceLabel(value) {
     var opt = document.querySelector('#f-service option[value="' + value + '"]');
@@ -199,14 +181,8 @@
   function initVideo() {
     var box = document.getElementById("video");
     var btn = box.querySelector(".video-play");
-    if (!CFG.youtubeId) {
-      btn.disabled = true;
-      var label = btn.querySelector("[data-i18n]");
-      var setLabel = function () { label.textContent = t("msg.noVideo"); };
-      setLabel();
-      document.addEventListener("languagechange", setLabel);
-      return;
-    }
+    // Sin vídeo configurado, no se muestra el recuadro
+    if (!CFG.youtubeId) { box.hidden = true; return; }
     box.style.backgroundImage = "url('https://i.ytimg.com/vi/" + CFG.youtubeId + "/hqdefault.jpg')";
     btn.addEventListener("click", function () {
       var iframe = document.createElement("iframe");
@@ -223,7 +199,6 @@
     document.getElementById("year").textContent = new Date().getFullYear();
     initNav();
     initPhotos();
-    initReveal();
     initContact();
     initServiceLinks();
     initForm();

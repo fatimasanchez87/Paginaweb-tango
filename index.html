@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fátima Sánchez & Pablo Cabrejos · Tango Argentino</title>
   <meta name="description" content="Fátima Sánchez y Pablo Cabrejos, pareja de tango argentino. Clases grupales y privadas, shows con o sin músicos en vivo y organización de milongas en Europa y en todo el mundo.">
-  <meta name="theme-color" content="#0f0b0c">
+  <meta name="theme-color" content="#161a2e">
 
   <!-- Open Graph / redes sociales -->
   <meta property="og:type" content="website">
@@ -17,7 +17,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@300..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Datos estructurados para buscadores -->
@@ -48,10 +48,7 @@
   <!-- ============ CABECERA ============ -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Fátima & Pablo · Tango">
-        <span class="brand-names">Fátima <em>&amp;</em> Pablo</span>
-        <span class="brand-sub">Tango Argentino</span>
-      </a>
+      <a class="brand" href="#top">Fátima &amp; Pablo</a>
 
       <nav class="main-nav" id="main-nav" aria-label="Menú principal">
         <ul>
@@ -71,191 +68,187 @@
         </div>
         <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">
           <span class="sr-only" data-i18n="nav.menu">Menú</span>
-          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span>
         </button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <!-- ============ HERO ============ -->
+    <!-- ============ PORTADA ============ -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-bg photo" data-img="assets/img/hero.jpg" role="img" aria-label="Fátima y Pablo bailando tango"></div>
-      <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Bailarines y profesores de tango argentino</p>
-        <h1 id="hero-title">Fátima Sánchez <span class="amp">&amp;</span> Pablo Cabrejos</h1>
-        <p class="hero-lead" data-i18n="hero.lead">Clases, shows y milongas con la pasión y la elegancia del tango de Buenos Aires. Disponibles en Europa y en todo el mundo.</p>
-        <div class="hero-ctas">
-          <a href="#contacto" class="btn btn-primary" data-service="class-private" data-i18n="hero.ctaClass">Reservar una clase</a>
-          <a href="#contacto" class="btn btn-outline" data-service="show-live" data-i18n="hero.ctaShow">Contratar un show</a>
+        <h1 id="hero-title" class="hero-names">
+          <span class="name name-a">Fátima Sánchez</span>
+          <span class="name-amp" aria-hidden="true">&amp;</span>
+          <span class="sr-only">y</span>
+          <span class="name name-b">Pablo Cabrejos</span>
+        </h1>
+        <div class="hero-foot">
+          <p class="hero-lead" data-i18n="hero.lead">Pareja de baile y profesores de tango argentino. Clases, shows y milongas en Europa y en el resto del mundo.</p>
+          <div class="hero-ctas">
+            <a href="#contacto" class="btn btn-primary" data-service="show-live" data-i18n="hero.ctaShow">Contratar un show</a>
+            <a href="#contacto" class="btn btn-ghost" data-service="class-private" data-i18n="hero.ctaClass">Reservar una clase</a>
+          </div>
         </div>
       </div>
-      <a href="#nosotros" class="scroll-hint" aria-label="Bajar"><span></span></a>
     </section>
 
     <!-- ============ NOSOTROS ============ -->
-    <section class="section" id="nosotros" aria-labelledby="about-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="eyebrow" data-i18n="about.eyebrow">Quiénes somos</p>
-          <h2 id="about-title" data-i18n="about.title">Una pareja, un abrazo, una historia</h2>
-          <p class="section-lead" data-i18n="about.lead">Ambos con una larga trayectoria en el tango argentino, hoy unimos nuestros caminos como pareja de baile para compartir esta danza en escenarios, salones y aulas de todo el mundo.</p>
+    <section class="section section-paper" id="nosotros" aria-labelledby="about-title">
+      <div class="container split">
+        <header class="section-head">
+          <h2 id="about-title" data-i18n="about.title">Una pareja, un abrazo</h2>
+          <p class="section-lead" data-i18n="about.lead">Los dos llevamos años dedicados al tango argentino. Ahora bailamos juntos como pareja, en escenarios, en milongas y en el aula, dentro y fuera de Europa.</p>
         </header>
 
         <div class="dancers">
-          <article class="dancer reveal">
+          <article class="dancer">
             <div class="dancer-photo photo" data-img="assets/img/fatima.jpg" role="img" aria-label="Fátima Sánchez"></div>
-            <div class="dancer-body">
-              <h3>Fátima Sánchez</h3>
-              <p class="role" data-i18n="about.fatimaRole">Bailarina y profesora</p>
-              <p data-i18n="about.fatimaBio">[PENDIENTE] Trayectoria de Fátima: formación, años bailando, maestros, festivales, compañías y escenarios en los que ha participado.</p>
-            </div>
+            <h3>Fátima Sánchez</h3>
+            <p class="role" data-i18n="about.fatimaRole">Bailarina y profesora</p>
+            <p data-i18n="about.fatimaBio">[PENDIENTE] Trayectoria de Fátima: formación, años bailando, maestros, festivales, compañías y escenarios en los que ha participado.</p>
           </article>
-          <article class="dancer reveal">
+          <article class="dancer">
             <div class="dancer-photo photo" data-img="assets/img/pablo.jpg" role="img" aria-label="Pablo Cabrejos"></div>
-            <div class="dancer-body">
-              <h3>Pablo Cabrejos</h3>
-              <p class="role" data-i18n="about.pabloRole">Bailarín y profesor</p>
-              <p data-i18n="about.pabloBio">[PENDIENTE] Trayectoria de Pablo: formación, años bailando, maestros, festivales, compañías y escenarios en los que ha participado.</p>
-            </div>
+            <h3>Pablo Cabrejos</h3>
+            <p class="role" data-i18n="about.pabloRole">Bailarín y profesor</p>
+            <p data-i18n="about.pabloBio">[PENDIENTE] Trayectoria de Pablo: formación, años bailando, maestros, festivales, compañías y escenarios en los que ha participado.</p>
           </article>
         </div>
-
-        <ul class="highlights reveal">
-          <li><strong data-i18n="about.h1Title">Clases</strong><span data-i18n="about.h1Text">Grupales y privadas, todos los niveles</span></li>
-          <li><strong data-i18n="about.h2Title">Shows</strong><span data-i18n="about.h2Text">Con o sin músicos en vivo</span></li>
-          <li><strong data-i18n="about.h3Title">Milongas</strong><span data-i18n="about.h3Text">Organización y animación</span></li>
-          <li><strong data-i18n="about.h4Title">Internacional</strong><span data-i18n="about.h4Text">Europa y resto del mundo</span></li>
-        </ul>
       </div>
     </section>
 
     <!-- ============ CLASES ============ -->
-    <section class="section section-dark" id="clases" aria-labelledby="classes-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="eyebrow" data-i18n="classes.eyebrow">Aprende a bailar tango</p>
+    <section class="section" id="clases" aria-labelledby="classes-title">
+      <div class="container split">
+        <header class="section-head">
           <h2 id="classes-title" data-i18n="classes.title">Clases de tango</h2>
-          <p class="section-lead" data-i18n="classes.lead">Técnica, musicalidad, conexión y abrazo. Adaptamos cada clase al nivel y a los objetivos de cada alumno, desde el primer paso hasta el perfeccionamiento.</p>
+          <p class="section-lead" data-i18n="classes.lead">Técnica, musicalidad, conexión y abrazo. Adaptamos cada clase al nivel y a lo que quiere conseguir cada alumno, desde el primer paso hasta el perfeccionamiento.</p>
         </header>
 
-        <div class="cards cards-2">
-          <article class="card reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><circle cx="16" cy="14" r="5"/><circle cx="32" cy="14" r="5"/><circle cx="8" cy="26" r="4"/><circle cx="40" cy="26" r="4"/><path d="M6 42c0-8 5-12 10-12s10 4 10 12M22 42c0-8 5-12 10-12s10 4 10 12"/></svg>
-            </div>
+        <div class="offers">
+          <article class="offer">
             <h3 data-i18n="classes.groupTitle">Clases grupales</h3>
             <p data-i18n="classes.groupText">Cursos regulares y seminarios intensivos para escuelas, asociaciones y festivales. Un espacio para aprender, practicar y compartir.</p>
-            <ul class="checklist">
+            <ul class="list">
               <li data-i18n="classes.group1">Niveles: iniciación, intermedio y avanzado</li>
               <li data-i18n="classes.group2">Cursos semanales, workshops y seminarios</li>
               <li data-i18n="classes.group3">Temáticos: vals, milonga, giros, musicalidad…</li>
               <li data-i18n="classes.group4">Viajamos a tu escuela o festival</li>
             </ul>
-            <a href="#contacto" class="btn btn-primary" data-service="class-group" data-i18n="classes.groupCta">Solicitar información</a>
+            <a href="#contacto" class="link-cta" data-service="class-group" data-i18n="classes.groupCta">Pedir información sobre clases grupales</a>
           </article>
 
-          <article class="card reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><circle cx="18" cy="12" r="5"/><circle cx="30" cy="12" r="5"/><path d="M10 42c0-10 4-16 8-16s6 3 6 3 2-3 6-3 8 6 8 16"/></svg>
-            </div>
+          <article class="offer">
             <h3 data-i18n="classes.privateTitle">Clases privadas</h3>
-            <p data-i18n="classes.privateText">Atención personalizada para individuos o parejas. Ideal para avanzar rápido, preparar una coreografía o el baile de tu boda.</p>
-            <ul class="checklist">
+            <p data-i18n="classes.privateText">Atención personalizada para una persona o una pareja. Ideal para avanzar rápido, preparar una coreografía o el baile de tu boda.</p>
+            <ul class="list">
               <li data-i18n="classes.private1">Individuales o en pareja</li>
-              <li data-i18n="classes.private2">Con uno o con ambos profesores</li>
+              <li data-i18n="classes.private2">Con uno o con los dos profesores</li>
               <li data-i18n="classes.private3">Coreografías para bodas y eventos</li>
-              <li data-i18n="classes.private4">Presenciales y bonos de varias clases</li>
+              <li data-i18n="classes.private4">Presenciales, sueltas o en bonos</li>
             </ul>
-            <a href="#contacto" class="btn btn-primary" data-service="class-private" data-i18n="classes.privateCta">Reservar clase privada</a>
+            <a href="#contacto" class="link-cta" data-service="class-private" data-i18n="classes.privateCta">Reservar una clase privada</a>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ============ SHOWS ============ -->
-    <section class="section" id="shows" aria-labelledby="shows-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="eyebrow" data-i18n="shows.eyebrow">Espectáculos</p>
+    <section class="section section-paper" id="shows" aria-labelledby="shows-title">
+      <div class="container split">
+        <header class="section-head">
           <h2 id="shows-title" data-i18n="shows.title">Shows de tango</h2>
-          <p class="section-lead" data-i18n="shows.lead">Llevamos la emoción del tango a tu evento. Exhibiciones a medida, con música grabada o acompañados por músicos en vivo.</p>
+          <p class="section-lead" data-i18n="shows.lead">Llevamos el tango a tu evento con una actuación a medida, con música grabada o con músicos en vivo.</p>
         </header>
 
-        <div class="cards cards-2">
-          <article class="card card-feature reveal">
-            <div class="card-photo photo" data-img="assets/img/show-musicos.jpg" role="img" aria-label=""></div>
-            <div class="card-content">
+        <div class="shows-body">
+          <div class="show-modes">
+            <article class="show-mode">
+              <div class="show-photo photo" data-img="assets/img/show-musicos.jpg" role="img" aria-label=""></div>
               <h3 data-i18n="shows.liveTitle">Con músicos en vivo</h3>
-              <p data-i18n="shows.liveText">Una experiencia completa: bandoneón, piano, violín, contrabajo o voz. Trabajamos con orquestas y músicos de confianza, o con los que tú propongas.</p>
-              <a href="#contacto" class="btn btn-primary" data-service="show-live" data-i18n="shows.cta">Pedir presupuesto</a>
-            </div>
-          </article>
-          <article class="card card-feature reveal">
-            <div class="card-photo photo" data-img="assets/img/show.jpg" role="img" aria-label=""></div>
-            <div class="card-content">
+              <p data-i18n="shows.liveText">Desde un dúo de bandoneón y guitarra hasta un cuarteto típico con bandoneón, violín, piano y contrabajo. Trabajamos con músicos de confianza o con los que tú propongas.</p>
+            </article>
+            <article class="show-mode">
+              <div class="show-photo photo" data-img="assets/img/show.jpg" role="img" aria-label=""></div>
               <h3 data-i18n="shows.recTitle">Con música grabada</h3>
-              <p data-i18n="shows.recText">Formato flexible y fácil de integrar en cualquier evento. Una selección de tangos, valses y milongas adaptada a la duración y el ambiente que buscas.</p>
-              <a href="#contacto" class="btn btn-primary" data-service="show-recorded" data-i18n="shows.cta">Pedir presupuesto</a>
-            </div>
-          </article>
-        </div>
+              <p data-i18n="shows.recText">El formato más flexible. Elegimos tangos, valses y milongas de las grandes orquestas según la duración y el ambiente de tu evento.</p>
+            </article>
+          </div>
 
-        <div class="events reveal">
-          <h3 data-i18n="shows.eventsTitle">Ideal para</h3>
-          <ul class="tags">
-            <li data-i18n="shows.ev1">Eventos corporativos</li>
+          <h3 class="sub-title" data-i18n="shows.formatsTitle">Formatos</h3>
+          <dl class="formats">
+            <div>
+              <dt data-i18n="shows.f1t">Exhibición en milonga</dt>
+              <dd data-i18n="shows.f1d">Tres o cuatro temas, unos 12 minutos. El formato clásico en milongas y festivales de tango.</dd>
+            </div>
+            <div>
+              <dt data-i18n="shows.f2t">Show para eventos</dt>
+              <dd data-i18n="shows.f2d">Entre 20 y 45 minutos, en uno o varios pases, con tango, vals y milonga.</dd>
+            </div>
+            <div>
+              <dt data-i18n="shows.f3t">Show y clase para invitados</dt>
+              <dd data-i18n="shows.f3d">Después del show, una clase de iniciación para que tus invitados prueben su primer abrazo.</dd>
+            </div>
+          </dl>
+
+          <h3 class="sub-title" data-i18n="shows.eventsTitle">Dónde bailamos</h3>
+          <ul class="events">
+            <li data-i18n="shows.ev1">Eventos de empresa</li>
             <li data-i18n="shows.ev2">Bodas y celebraciones</li>
             <li data-i18n="shows.ev3">Festivales y teatros</li>
-            <li data-i18n="shows.ev4">Galas y cenas-espectáculo</li>
+            <li data-i18n="shows.ev4">Galas y cenas con espectáculo</li>
             <li data-i18n="shows.ev5">Hoteles y cruceros</li>
             <li data-i18n="shows.ev6">Encuentros y maratones de tango</li>
           </ul>
-        </div>
 
-        <div class="business reveal">
-          <div>
-            <p class="eyebrow" data-i18n="shows.bizEyebrow">Para empresas y organizadores</p>
-            <h3 data-i18n="shows.bizTitle">Contratación profesional, dentro y fuera de Europa</h3>
-          </div>
-          <ul class="checklist">
-            <li data-i18n="shows.biz1">Presupuesto a medida en 24–48 h</li>
-            <li data-i18n="shows.biz2">Rider técnico y necesidades de escenario</li>
-            <li data-i18n="shows.biz3">Show + clase de iniciación para invitados</li>
-            <li data-i18n="shows.biz4">Disponibilidad para viajar a cualquier país</li>
-            <li data-i18n="shows.biz5">Atención en español e inglés</li>
-          </ul>
+          <a href="#contacto" class="btn btn-primary" data-service="show-live" data-i18n="shows.cta">Pedir presupuesto para un show</a>
         </div>
+      </div>
+    </section>
+
+    <!-- Banda para empresas -->
+    <section class="business" aria-labelledby="biz-title">
+      <div class="container business-inner">
+        <h2 id="biz-title" data-i18n="shows.bizTitle">Para empresas y organizadores, en Europa y fuera de ella</h2>
+        <ul class="list">
+          <li data-i18n="shows.biz1">Presupuesto a medida en 24–48 horas</li>
+          <li data-i18n="shows.biz2">Rider técnico y necesidades de escenario</li>
+          <li data-i18n="shows.biz3">Viajamos a cualquier país</li>
+          <li data-i18n="shows.biz4">Factura y contrato</li>
+          <li data-i18n="shows.biz5">Atención en español e inglés</li>
+        </ul>
       </div>
     </section>
 
     <!-- ============ MILONGAS ============ -->
-    <section class="section section-milonga" id="milongas" aria-labelledby="milongas-title">
+    <section class="section section-velvet" id="milongas" aria-labelledby="milongas-title">
       <div class="milonga-bg photo" data-img="assets/img/milonga.jpg" aria-hidden="true"></div>
-      <div class="container milonga-inner reveal">
-        <p class="eyebrow" data-i18n="milongas.eyebrow">Encuentros de baile</p>
-        <h2 id="milongas-title" data-i18n="milongas.title">Organizamos milongas</h2>
-        <p class="section-lead" data-i18n="milongas.lead">La milonga es el corazón social del tango. Creamos y animamos milongas para festivales, asociaciones, espacios culturales y eventos privados: musicalización, exhibición, ambiente y una clase previa para quien se inicia.</p>
-        <ul class="tags tags-light">
-          <li data-i18n="milongas.t1">Milongas regulares</li>
-          <li data-i18n="milongas.t2">Milongas temáticas</li>
-          <li data-i18n="milongas.t3">Festivales y encuentros</li>
-          <li data-i18n="milongas.t4">Eventos privados</li>
-        </ul>
-        <a href="#contacto" class="btn btn-primary" data-service="milonga" data-i18n="milongas.cta">Organiza una milonga con nosotros</a>
+      <div class="container split">
+        <header class="section-head">
+          <h2 id="milongas-title" data-i18n="milongas.title">Organizamos milongas</h2>
+        </header>
+        <div class="milonga-body">
+          <p class="section-lead" data-i18n="milongas.lead">La milonga es el corazón social del tango. Creamos y animamos milongas para festivales, asociaciones, espacios culturales y eventos privados: la música por tandas, la exhibición, el ambiente y una clase previa para quien empieza.</p>
+          <ul class="list list-2">
+            <li data-i18n="milongas.t1">Milongas regulares</li>
+            <li data-i18n="milongas.t2">Milongas temáticas</li>
+            <li data-i18n="milongas.t3">Festivales y encuentros</li>
+            <li data-i18n="milongas.t4">Eventos privados</li>
+          </ul>
+          <a href="#contacto" class="btn btn-primary" data-service="milonga" data-i18n="milongas.cta">Organizar una milonga con nosotros</a>
+        </div>
       </div>
     </section>
 
     <!-- ============ GALERÍA ============ -->
-    <section class="section" id="galeria" aria-labelledby="gallery-title">
+    <section class="section section-paper" id="galeria" aria-labelledby="gallery-title">
       <div class="container">
-        <header class="section-head reveal">
-          <p class="eyebrow" data-i18n="gallery.eyebrow">Galería</p>
-          <h2 id="gallery-title" data-i18n="gallery.title">Nuestro tango en imágenes</h2>
-        </header>
+        <h2 id="gallery-title" class="gallery-title" data-i18n="gallery.title">Galería</h2>
 
-        <div class="gallery reveal">
+        <div class="gallery">
           <div class="photo g-1" data-img="assets/img/galeria-1.jpg" role="img" aria-label="Tango 1"></div>
           <div class="photo g-2" data-img="assets/img/galeria-2.jpg" role="img" aria-label="Tango 2"></div>
           <div class="photo g-3" data-img="assets/img/galeria-3.jpg" role="img" aria-label="Tango 3"></div>
@@ -265,7 +258,7 @@
         </div>
 
         <!-- Vídeo: se carga solo al pulsar (más rápido y sin cookies hasta entonces) -->
-        <div class="video reveal" id="video">
+        <div class="video" id="video">
           <button type="button" class="video-play" data-i18n-aria="gallery.play" aria-label="Reproducir vídeo">
             <span class="play-icon" aria-hidden="true"></span>
             <span data-i18n="gallery.video">Ver vídeo</span>
@@ -275,28 +268,27 @@
     </section>
 
     <!-- ============ CONTACTO ============ -->
-    <section class="section section-dark" id="contacto" aria-labelledby="contact-title">
+    <section class="section" id="contacto" aria-labelledby="contact-title">
       <div class="container contact-grid">
-        <div class="contact-info reveal">
-          <p class="eyebrow" data-i18n="contact.eyebrow">Reservas y contrataciones</p>
-          <h2 id="contact-title" data-i18n="contact.title">Hablemos de tu proyecto</h2>
-          <p data-i18n="contact.lead">Cuéntanos qué necesitas —una clase, un show, una milonga— y te responderemos con disponibilidad y presupuesto lo antes posible.</p>
+        <div class="contact-info">
+          <h2 id="contact-title" data-i18n="contact.title">Cuéntanos qué necesitas</h2>
+          <p data-i18n="contact.lead">Una clase, un show o una milonga. Escríbenos con la fecha y el lugar y te responderemos con disponibilidad y presupuesto.</p>
 
           <a class="btn btn-whatsapp" id="whatsapp-link" href="#" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
-            <span data-i18n="contact.whatsapp">Escríbenos por WhatsApp</span>
+            <span data-i18n="contact.whatsapp">Escribir por WhatsApp</span>
           </a>
 
-          <ul class="contact-list">
-            <li><span data-i18n="contact.emailLabel">Email</span> <a id="email-link" href="#">—</a></li>
-            <li><span data-i18n="contact.phoneLabel">Teléfono</span> <a id="phone-link" href="#">—</a></li>
-            <li><span data-i18n="contact.baseLabel">Base</span> <span id="base-city">—</span> · <span data-i18n="contact.travel">disponibles para viajar</span></li>
-          </ul>
+          <dl class="contact-list">
+            <div><dt data-i18n="contact.emailLabel">Email</dt><dd><a id="email-link" href="#">—</a></dd></div>
+            <div><dt data-i18n="contact.phoneLabel">Teléfono</dt><dd><a id="phone-link" href="#">—</a></dd></div>
+            <div><dt data-i18n="contact.baseLabel">Desde</dt><dd><span id="base-city">—</span>, <span data-i18n="contact.travel">con disponibilidad para viajar</span></dd></div>
+          </dl>
 
           <ul class="socials" id="socials"></ul>
         </div>
 
-        <form class="booking-form reveal" id="booking-form" novalidate>
+        <form class="booking-form" id="booking-form" novalidate>
           <div class="form-row">
             <label for="f-name" data-i18n="form.name">Nombre y apellidos *</label>
             <input id="f-name" name="nombre" type="text" autocomplete="name" required>
@@ -368,8 +360,8 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <p class="brand-names">Fátima <em>&amp;</em> Pablo</p>
-        <p class="footer-tag" data-i18n="footer.tag">Tango argentino · Clases · Shows · Milongas</p>
+        <p class="brand">Fátima &amp; Pablo</p>
+        <p class="footer-tag" data-i18n="footer.tag">Tango argentino: clases, shows y milongas</p>
       </div>
       <p class="footer-legal">
         © <span id="year"></span> Fátima Sánchez &amp; Pablo Cabrejos.
